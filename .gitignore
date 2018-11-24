@@ -1,0 +1,6 @@
+﻿.vs/
+obj/
+Debug/
+logs/
+bin/
+*.cache
