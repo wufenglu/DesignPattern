@@ -56,6 +56,7 @@
     <Compile Include="FactioryObject.cs" />
     <Compile Include="MultiFunFactiory.cs" />
     <Compile Include="SimpleFactiory.cs" />
+    <Compile Include="代理模式.cs" />
     <Compile Include="类的适配器模式.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

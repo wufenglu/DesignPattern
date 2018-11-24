@@ -17,6 +17,9 @@ namespace 设计模式
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            IMessage message = new ProxyMessage();
+            message.Send();
         }
     }
 }

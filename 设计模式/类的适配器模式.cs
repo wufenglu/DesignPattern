@@ -6,29 +6,29 @@ using System.Threading.Tasks;
 
 namespace 设计模式
 {
-    public class Source
-    {
-
-        public void method1()
-        {
-            Console.Write("this is original method!");
-        }        
-    }
-
-    public interface Targetable
+    public interface ITargetable
     {
 
         /* 与原类中的方法相同 */
-        void method1();
+        void Method1();
 
         /* 新类的方法 */
-        void method2();
+        void Method2();
     }
 
-    public class Adapter : Source, Targetable
+    public class Source
     {
 
-        public void method2()
+        public void Method1()
+        {
+            Console.Write("this is original method!");
+        }
+    }
+
+    public class Adapter : Source, ITargetable
+    {
+
+        public void Method2()
         {
             Console.Write("this is the targetable method!");
         }
