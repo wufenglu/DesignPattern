@@ -19,7 +19,28 @@ namespace 设计模式
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SimpleFactiory.GetSqlHelper(SqlEnum.SqlServer).Insert();
+            //SimpleFactiory.GetSqlHelper(SqlEnum.SqlServer).Insert();
+
+            IMessage message = new ProxyMessage();
+            message.Send();
+
+            Task task1 = new Task(() => {
+                SingletonPattern singletonPattern = SingletonPattern.GetInstall();
+                singletonPattern.AppendText("AAA");
+            });
+            task1.Start();
+
+            Task task2 = new Task(() => {
+                SingletonPattern singletonPattern = SingletonPattern.GetInstall();
+                singletonPattern.AppendText("BBB");
+            });
+            task2.Start();
+
+            Task task3 = new Task(() => {
+                SingletonPattern singletonPattern = SingletonPattern.GetInstall();
+                singletonPattern.AppendText("CCC");
+            });
+            task3.Start();
         }
     }
 }
