@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YK.Platform.Core;
 
 namespace 设计模式
 {
@@ -18,5 +19,7 @@ namespace 设计模式
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
+        
     }
 }
