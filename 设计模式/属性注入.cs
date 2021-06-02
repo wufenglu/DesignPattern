@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pay;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,11 +28,23 @@ namespace 设计模式
         public IAttributeIocPublicService iAttributeIocPublicService { get; set; }
 
         /// <summary>
+        /// 接口服务
+        /// </summary>
+        public IPayIocPublicService iPayIocPublicService { get; set; }
+
+        /// <summary>
+        /// 接口服务
+        /// </summary>
+        public ILogIocPublicService iLogIocPublicService { get; set; }
+
+        /// <summary>
         /// 保存
         /// </summary>
         public void Save()
         {
             iAttributeIocPublicService.Save();
+            iPayIocPublicService.Pay();
+            iLogIocPublicService.Log();
         }
     }
 }

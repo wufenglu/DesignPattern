@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pay;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,8 @@ namespace ConsoleApp
         static void Injection()
         {
             ServiceContainer.Register<AttributeIocAppService, IAttributeIocPublicService>();
+            ServiceContainer.Register<LogIocAppService, ILogIocPublicService>();
+            ServiceContainer.Register<PayIocAppService, IPayIocPublicService>();
         }
     }
 }

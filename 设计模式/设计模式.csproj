@@ -51,6 +51,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="log.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FactioryObject.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="SimpleFactiory.cs" />
     <Compile Include="代理模式.cs" />
     <Compile Include="单例模式.cs" />
+    <Compile Include="pay.cs" />
     <Compile Include="属性注入.cs" />
     <Compile Include="适配器模式.cs" />
     <EmbeddedResource Include="Form1.resx">
